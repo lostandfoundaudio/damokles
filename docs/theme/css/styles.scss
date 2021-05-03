@@ -1,0 +1,234 @@
+$view-port-width: 50rem;
+
+@function strip-unit($value) {
+  @return $value / ($value * 0 + 1);
+}
+
+@mixin fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size) {
+  $u1: unit($min-vw);
+  $u2: unit($max-vw);
+  $u3: unit($min-font-size);
+  $u4: unit($max-font-size);
+
+  @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
+    & {
+      font-size: $min-font-size;
+      @media screen and (min-width: $min-vw) {
+        font-size: calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
+      }
+      @media screen and (min-width: $max-vw) {
+        font-size: $max-font-size;
+      }
+    }
+  }
+}
+
+$min_width: 320px;
+$max_width: 1200px;
+$min_font: 16px;
+$max_font: 24px;
+
+html {
+  @include fluid-type($min_width, $max_width, $min_font, $max_font);
+}
+
+body {
+  background: rgb(50, 50, 50);
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+.c-heading--h1 {
+  margin: 0;
+  padding: 0;
+  //font-size: 50px;
+  font-style: italic;
+  font-weight: 100;
+  font-family: "Times New Roman";
+  position: relative;
+
+
+  &:before {
+    content: '';
+    width: 10px;
+    background: red;
+    height: 100%;
+    display: block;
+    position: absolute;
+    left: -30px;
+  }
+
+  > a {
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+  }
+}
+
+.c-list {
+  list-style: none;
+  padding: 0;
+  max-width: $view-port-width;
+  margin: 0 auto;
+}
+
+a {
+  color: black;
+}
+
+.c-article {
+
+  padding: 1rem 0 1rem;
+
+  &--bordered {
+    border-bottom: dashed 1px rgb(200, 200, 200);
+  }
+
+  &__title {
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 10px;
+
+    > a {
+      text-decoration: none;
+      border-bottom: 1px solid currentColor;
+    }
+  }
+
+
+  > footer {
+    color: dimgray;
+    //font-size: .85rem;
+  }
+
+  &__summary {
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.u-pt--0 {
+  padding-top: 0;
+}
+
+audio {
+  width: 100%;
+}
+
+nav {
+  background: white;
+  border-top: solid grey 1px;
+  border-bottom: solid grey 1px;
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  font-size: 1rem;
+
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: $view-port-width;
+    max-width: $view-port-width;
+    margin: 0 auto;
+
+    @media(min-width: 720px) {
+      flex-direction: row;
+    }
+
+    li {
+      padding: 0 20px;
+
+      &:first-child {
+
+        @media(min-width: 720px) {
+       padding-left: 0;
+        }
+      }
+
+
+      > a {
+        padding: 10px 0;
+        display: inline-block;
+      }
+    }
+  }
+}
+
+.c-page-footer {
+  padding-top: 10rem;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+
+  a{
+    color: white;
+  }
+}
+
+.c-pagination {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+
+  li + li {
+    padding-left: 10px;
+  }
+}
+
+
+.c-content {
+  max-width: $view-port-width;
+  margin: 0 auto;
+  background: white;
+  padding: 30px;
+  //box-shadow: 0 0 30px rgb(30, 30, 30);
+}
+
+p {
+  font-weight: lighter;
+}
+
+details {
+
+  summary {
+    background: white;
+    font-weight: lighter;
+    font-size: 20px;
+    border-top: solid grey 1px;
+    border-bottom: solid grey 1px;
+    padding: 10px 0;
+  }
+
+  p {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.c-page-header {
+  background-image: url('../images/damocles-head.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  min-height: 20rem;
+
+  h1 {
+    margin: 0 auto;
+    max-width: 50rem;
+    font-size: 5.4vw;
+  }
+
+  a {
+    color: white;
+  }
+}

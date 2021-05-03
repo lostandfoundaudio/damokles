@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous"></script>
+          <title>Damokles - Joost Wilgenhof</title>
+        <meta charset="utf-8" />
+        <meta name="generator" content="lostandfoundaudio" />
+        <meta name="description" content="Damokles: een foto reportage op de radio" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+            <link rel="stylesheet" href="https://lostandfoundaudio.github.io/damokles/theme/css/styles.min.css?2e80bc00">
+</head>
+
+<body>
+        <header class="c-page-header">
+             <h1><a href="https://lostandfoundaudio.github.io/damokles/">Damokles</a></h1>
+        </header><!-- /#banner -->
+        <nav class="c-top-menu"><ul>
+            <li><a href="/index.html">Afleveringen</a></li>
+            <li><a href="/pages/authors.html">Makers</a></li>
+            <li><a href="https://lostandfoundaudio.github.io/damokles/pages/waarom.html">Waarom deze site?</a></li>
+            <li><a href="https://lostandfoundaudio.github.io/damokles/pages/missende-afleveringen.html">Missende afleveringen</a></li>
+            <li><a href="https://lostandfoundaudio.github.io/damokles/pages/links.html">Links</a></li>
+            <li><a href="https://lostandfoundaudio.github.io/damokles/pages/redactie.html">Redactie</a></li>
+        </ul></nav><!-- /#menu -->
+
+        <main class="c-content">
+    <h2 class="c-heading--h1">Joost Wilgenhof</h1>
+    
+
+    <p>Joost Wilgenhof (5-3-1967)</p>
+<p>Na de School voor de Journalistiek schreef hij o.a. voor Hervormd Nederland en werkte hij voor diverse radioprogramma's bij de IKON, VPRO, VARA. Vanaf 1994 ook voor het programma Damokles van de KRO. De laatste jaren maakt hij voor Damokles gemiddeld vier programma's per jaar.</p>
+<p>Hij reisde in 1992 vijf maanden door Mexico en Guatemala. In 1993 reisde hij een maand door Equador en in 1997 maakte hij een rondreis van een maand door Zuid-Afrika en Zimbabwe.</p>
+
+        </main>
+
+<!--   -->
+<!--                             <li><a href="https://getpelican.com/">Pelican</a></li> -->
+<!--                          -->
+<!--                             <li><a href="https://www.python.org/">Python.org</a></li> -->
+<!--                          -->
+<!--                             <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li> -->
+<!--                          -->
+<!--                             <li><a href="#">You can modify those links in your config file</a></li> -->
+<!--                          -->
+
+        <footer class="c-page-footer">
+                <address id="about" class="vcard body">
+                 Een initiatief van <a href="mailto://lostandfoundaudio@protonmail.com">Lost and found</a>
+                </address><!-- /#about -->
+        </footer><!-- /#contentinfo -->
+
+<script>
+moment.locale('nl');
+
+function formatItemDurations() {
+	var content = document.getElementsByClassName('js--duration');
+
+	// Loop through all dates
+	for (var i = 0; i < content.length; i++) {
+    	var item = content[i];
+
+    	// Parse ISO-8601
+    	var durationObj = moment.duration(item.innerHTML);
+// console.log(durationObj)
+        item.innerHTML= moment.utc(durationObj*1000).format('HH:mm:ss');
+
+		// Print pretty version
+// 		item.innerHTML = durationObj.humanize();
+	}
+}
+formatItemDurations()
+</script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous"></script>
+          <title>Damokles - Ines ten Berge</title>
+        <meta charset="utf-8" />
+        <meta name="generator" content="lostandfoundaudio" />
+        <meta name="description" content="Damokles: een foto reportage op de radio" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+            <link rel="stylesheet" href="https://lostandfoundaudio.github.io/damokles/theme/css/styles.min.css?2e80bc00">
+</head>
+
+<body>
+        <header class="c-page-header">
+             <h1><a href="https://lostandfoundaudio.github.io/damokles/">Damokles</a></h1>
+        </header><!-- /#banner -->
+        <nav class="c-top-menu"><ul>
+            <li><a href="/index.html">Afleveringen</a></li>
+            <li><a href="/pages/authors.html">Makers</a></li>
+            <li><a href="https://lostandfoundaudio.github.io/damokles/pages/waarom.html">Waarom deze site?</a></li>
+            <li><a href="https://lostandfoundaudio.github.io/damokles/pages/missende-afleveringen.html">Missende afleveringen</a></li>
+            <li><a href="https://lostandfoundaudio.github.io/damokles/pages/links.html">Links</a></li>
+            <li><a href="https://lostandfoundaudio.github.io/damokles/pages/redactie.html">Redactie</a></li>
+        </ul></nav><!-- /#menu -->
+
+        <main class="c-content">
+    <h2 class="c-heading--h1">Ines ten Berge</h1>
+    
+
+    <p>Ines ten Berge (20 november 1969)</p>
+<p>Ines ten Berge maakt een vliegende start in de wereld van de radio. Meteen na haar afstuderen aan de School voor Journalistiek, in 1992, wint zij de RVU radiodocumentaire prijs voor jong talent.</p>
+<p>Daarna gaat zij meteen aan de slag bij Omroep Gelderland als radioverslaggever. Nu werkt zij alweer bijna 5 jaar voor het programma Tijd voor Twee met Frits Spits. In 1998 maakt zij haar eerste Damokles, een programma waarin zij, naast de jachtigheid van het nieuwsjagen, de mogelijkheid heeft om een onderwerp eens echt uit te diepen.</p>
+<p>Op de vraag aan Ines wat haar het best is bijgebleven van haar programma 'De Zaak' antwoordt zij: "Het mooiste moment tijdens het maken van het programma 'De Zaak' over de familie Wilman vond ik het moment waarop meneer Wilman mij meenam naar één van de vele geheime plaatsen waar hij kopieën van zijn BVD-dossier verstopt heeft. Hij liet me een roze ochtendjas zien die achterin zijn kledingkast hing. In die ochtendjas zat weer een tas verstopt met daarin één van de kopieën. Blijkbaar vertrouwde hij me zo dat hij me dit wilde laten zien...hij was er zich helemaal niet meer van bewust dat ik met mijn grote microfoons alles duidelijk aan het opnemen was, want nadat hij de kast weer dicht deed zei hij: 'Je moet het maar niet verder vertellen hoor'..."</p>
+
+        </main>
+
+<!--   -->
+<!--                             <li><a href="https://getpelican.com/">Pelican</a></li> -->
+<!--                          -->
+<!--                             <li><a href="https://www.python.org/">Python.org</a></li> -->
+<!--                          -->
+<!--                             <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li> -->
+<!--                          -->
+<!--                             <li><a href="#">You can modify those links in your config file</a></li> -->
+<!--                          -->
+
+        <footer class="c-page-footer">
+                <address id="about" class="vcard body">
+                 Een initiatief van <a href="mailto://lostandfoundaudio@protonmail.com">Lost and found</a>
+                </address><!-- /#about -->
+        </footer><!-- /#contentinfo -->
+
+<script>
+moment.locale('nl');
+
+function formatItemDurations() {
+	var content = document.getElementsByClassName('js--duration');
+
+	// Loop through all dates
+	for (var i = 0; i < content.length; i++) {
+    	var item = content[i];
+
+    	// Parse ISO-8601
+    	var durationObj = moment.duration(item.innerHTML);
+// console.log(durationObj)
+        item.innerHTML= moment.utc(durationObj*1000).format('HH:mm:ss');
+
+		// Print pretty version
+// 		item.innerHTML = durationObj.humanize();
+	}
+}
+formatItemDurations()
+</script>
+</body>
+</html>

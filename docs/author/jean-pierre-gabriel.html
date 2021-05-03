@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous"></script>
+        <title>Damokles - Afleveringen door Jean pierre Gabriël</title>
+        <meta charset="utf-8" />
+        <meta name="generator" content="lostandfoundaudio" />
+        <meta name="description" content="Damokles: een foto reportage op de radio" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+            <link rel="stylesheet" href="https://lostandfoundaudio.github.io/damokles/theme/css/styles.min.css?2e80bc00">
+</head>
+
+<body>
+        <header class="c-page-header">
+             <h1><a href="https://lostandfoundaudio.github.io/damokles/">Damokles</a></h1>
+        </header><!-- /#banner -->
+        <nav class="c-top-menu"><ul>
+            <li><a href="/index.html">Afleveringen</a></li>
+            <li><a href="/pages/authors.html">Makers</a></li>
+            <li><a href="https://lostandfoundaudio.github.io/damokles/pages/waarom.html">Waarom deze site?</a></li>
+            <li><a href="https://lostandfoundaudio.github.io/damokles/pages/missende-afleveringen.html">Missende afleveringen</a></li>
+            <li><a href="https://lostandfoundaudio.github.io/damokles/pages/links.html">Links</a></li>
+            <li><a href="https://lostandfoundaudio.github.io/damokles/pages/redactie.html">Redactie</a></li>
+        </ul></nav><!-- /#menu -->
+
+        <main class="c-content">
+<section id="content">
+<h2 class="c-heading--h1">Afleveringen door Jean pierre Gabriël</h2>
+
+<ol class="c-list">
+        <li>
+            <article class="c-article c-article--bordered">
+                <header>
+                    <h2 class="c-article__title">
+                        <a href="https://lostandfoundaudio.github.io/damokles/200-damokles.html" rel="bookmark" title="Permalink to het eeuwige doodsbeeld">het eeuwige doodsbeeld</a></h2>
+                    </header>
+                <footer class="c-article__footer">
+                    <time class="c-article__tiny" datetime="2002-02-04T00:00:00+01:00"> Mon 04 February 2002 </time>
+                    <span class="c-article__tiny js--duration"></span>
+                    <address class="vcard author">Maker:
+                        <a class="url fn" href="https://lostandfoundaudio.github.io/damokles/author/jurek-willig.html">Jurek Willig</a>
+                        <a class="url fn" href="https://lostandfoundaudio.github.io/damokles/author/bart-geeraedts.html">Bart Geeraedts</a>
+                        <a class="url fn" href="https://lostandfoundaudio.github.io/damokles/author/jean-pierre-gabriel.html">Jean pierre Gabriël</a>
+                        <a class="url fn" href="https://lostandfoundaudio.github.io/damokles/author/jaap-vermeer.html">Jaap Vermeer</a>
+                        <a class="url fn" href="https://lostandfoundaudio.github.io/damokles/author/ernst-lissauer.html">Ernst Lissauer</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="c-article__summary"> <p>Na middernacht maandag vier februari uit de nos radio deus de. Mensen dit zouden weten dat we voelen ook in de ovenwant is dat toch werkelijk wat de. Pas ik mis 'm.</p> </div><!-- /.entry-content -->
+        </article>
+        </li>
+</ol><!-- /#posts-list -->
+</section><!-- /#content -->
+        </main>
+
+<!--   -->
+<!--                             <li><a href="https://getpelican.com/">Pelican</a></li> -->
+<!--                          -->
+<!--                             <li><a href="https://www.python.org/">Python.org</a></li> -->
+<!--                          -->
+<!--                             <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li> -->
+<!--                          -->
+<!--                             <li><a href="#">You can modify those links in your config file</a></li> -->
+<!--                          -->
+
+        <footer class="c-page-footer">
+                <address id="about" class="vcard body">
+                 Een initiatief van <a href="mailto://lostandfoundaudio@protonmail.com">Lost and found</a>
+                </address><!-- /#about -->
+        </footer><!-- /#contentinfo -->
+
+<script>
+moment.locale('nl');
+
+function formatItemDurations() {
+	var content = document.getElementsByClassName('js--duration');
+
+	// Loop through all dates
+	for (var i = 0; i < content.length; i++) {
+    	var item = content[i];
+
+    	// Parse ISO-8601
+    	var durationObj = moment.duration(item.innerHTML);
+// console.log(durationObj)
+        item.innerHTML= moment.utc(durationObj*1000).format('HH:mm:ss');
+
+		// Print pretty version
+// 		item.innerHTML = durationObj.humanize();
+	}
+}
+formatItemDurations()
+</script>
+</body>
+</html>

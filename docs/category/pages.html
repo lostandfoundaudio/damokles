@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous"></script>
+        <title>Damokles - pages category</title>
+        <meta charset="utf-8" />
+        <meta name="generator" content="lostandfoundaudio" />
+        <meta name="description" content="Damokles: een foto reportage op de radio" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Damokles Full Atom Feed" />
+        <link href="./feeds/pages.atom.xml" type="application/atom+xml" rel="alternate" title="Damokles Categories Atom Feed" />
+
+
+</head>
+
+<body>
+        <header class="c-page-header">
+             <h1><a href="../">Damokles</a></h1>
+        </header><!-- /#banner -->
+        <nav class="c-top-menu"><ul>
+            <li><a href="/">Afleveringen</a></li>
+            <li><a href="/authors.html">Makers</a></li>
+        </ul></nav><!-- /#menu -->
+
+        <div class="c-content">
+<section id="content">
+<h2 class="c-heading--h1">Articles in the pages category</h2>
+
+<ol class="c-list">
+        <li>
+            <article class="c-article c-article--bordered">
+                <header>
+                    <h2 class="c-article__title">
+                        <a href="../links.html" rel="bookmark" title="Permalink to Links">Links</a></h2>
+                    </header>
+                <footer class="c-article__footer">
+                    <time class="c-article__tiny" datetime="2010-12-03T10:20:00+01:00"> Fri 03 December 2010 </time>
+                    <span class="c-article__tiny js--duration"></span>
+                    <address class="vcard author">Maker:
+                        <a class="url fn" href="../author/lost-and-found-audio.html">Lost and found audio</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="c-article__summary"> <p>De lijst met samengestelde links door de redactie van Damokkles. </p>
+<p>De lijst is bijgewerkt met nieuwe links. </p>
+<h3>Nederland</h3>
+<ul>
+<li><a href="http://info.omroep.nl/ncrv/radio?nav=xXsHjHAJW">NCRV</a></li>
+<li><a href="http://www.vpro.nl/frontend/index-back.shtml?949097924">VPRO</a></li>
+<li><a href="http://www.omroep.nl/nps/radio/bijlage/">NPS</a></li>
+</ul>
+<h3>België</h3>
+<ul>
+<li><a href="http://www.radio1.be/">Radio1</a></li>
+</ul>
+<h3>Duitsland</h3>
+<ul>
+<li><a href="http://www.wdr.de/radio/feature/">WDR3</a></li>
+</ul>
+<h3>Frankrijk</h3>
+<ul>
+<li><a href="http://www.radio-france.fr/chaines/france-info/direct/">France Inter</a></li>
+<li><a href="http://www.rfi.fr/Radio_Mondiale/bord_droit_5.html">Radio France Internationale</a></li>
+</ul>
+<h3>Groot Brittannië</h3>
+<ul>
+<li><a href="http://www.bbc.co.uk/radio4/">BBC Radio 4</a></li>
+<li><a href="http://www.bbc.co.uk/worldservice/mycentury/wk13.shtml">BBC World Service</a></li>
+<li><a href="http://www.bbc.co.uk/northernireland/tvr-docs-homepage.shtml">BBC Noord Ierland</a></li>
+</ul>
+<h3>Ierland</h3>
+<ul>
+<li><a href="http://www.rte.ie/radio/documentaryonone/">RTE1</a></li>
+</ul>
+<h3>Verenigde Staten</h3>
+<ul>
+<li><a href="http://www.npr.org/programs/info.html">National Public Radio</a></li>
+<li><a href="https://www.mpr.org/">Minnesota …</a></li></ul> </div><!-- /.entry-content -->
+        </article>
+        </li>
+</ol><!-- /#posts-list -->
+</section><!-- /#content -->
+        </div>
+
+<!--   -->
+<!--                             <li><a href="https://getpelican.com/">Pelican</a></li> -->
+<!--                          -->
+<!--                             <li><a href="https://www.python.org/">Python.org</a></li> -->
+<!--                          -->
+<!--                             <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li> -->
+<!--                          -->
+<!--                             <li><a href="#">You can modify those links in your config file</a></li> -->
+<!--                          -->
+
+        <footer class="c-page-footer">
+                <address id="about" class="vcard body">
+                 Ern initiatief van <a href="mailto://lostandfoundaudio@protonmail.com">Lost and found</a>
+                </address><!-- /#about -->
+        </footer><!-- /#contentinfo -->
+
+<script>
+moment.locale('nl');
+
+function formatItemDurations() {
+	var content = document.getElementsByClassName('js--duration');
+
+	// Loop through all dates
+	for (var i = 0; i < content.length; i++) {
+    	var item = content[i];
+
+    	// Parse ISO-8601
+    	var durationObj = moment.duration(item.innerHTML);
+// console.log(durationObj)
+        item.innerHTML= moment.utc(durationObj*1000).format('HH:mm:ss');
+
+		// Print pretty version
+// 		item.innerHTML = durationObj.humanize();
+	}
+}
+formatItemDurations()
+</script>
+</body>
+</html>

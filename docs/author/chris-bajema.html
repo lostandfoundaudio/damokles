@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous"></script>
+        <title>Damokles - Afleveringen door Chris Bajema</title>
+        <meta charset="utf-8" />
+        <meta name="generator" content="lostandfoundaudio" />
+        <meta name="description" content="Damokles: een foto reportage op de radio" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+            <link rel="stylesheet" href="https://lostandfoundaudio.github.io/damokles/theme/css/styles.min.css?2e80bc00">
+</head>
+
+<body>
+        <header class="c-page-header">
+             <h1><a href="https://lostandfoundaudio.github.io/damokles/">Damokles</a></h1>
+        </header><!-- /#banner -->
+        <nav class="c-top-menu"><ul>
+            <li><a href="/index.html">Afleveringen</a></li>
+            <li><a href="/pages/authors.html">Makers</a></li>
+            <li><a href="https://lostandfoundaudio.github.io/damokles/pages/waarom.html">Waarom deze site?</a></li>
+            <li><a href="https://lostandfoundaudio.github.io/damokles/pages/missende-afleveringen.html">Missende afleveringen</a></li>
+            <li><a href="https://lostandfoundaudio.github.io/damokles/pages/links.html">Links</a></li>
+            <li><a href="https://lostandfoundaudio.github.io/damokles/pages/redactie.html">Redactie</a></li>
+        </ul></nav><!-- /#menu -->
+
+        <main class="c-content">
+<section id="content">
+<h2 class="c-heading--h1">Afleveringen door Chris Bajema</h2>
+
+<ol class="c-list">
+        <li>
+            <article class="c-article c-article--bordered">
+                <header>
+                    <h2 class="c-article__title">
+                        <a href="https://lostandfoundaudio.github.io/damokles/166-damokles.html" rel="bookmark" title="Permalink to het proces">het proces</a></h2>
+                    </header>
+                <footer class="c-article__footer">
+                    <time class="c-article__tiny" datetime="2002-01-07T00:00:00+01:00"> Mon 07 January 2002 </time>
+                    <span class="c-article__tiny js--duration">3597</span>
+                    <address class="vcard author">Maker:
+                        <a class="url fn" href="https://lostandfoundaudio.github.io/damokles/author/jaap-vermeer.html">Jaap Vermeer</a>
+                        <a class="url fn" href="https://lostandfoundaudio.github.io/damokles/author/bart-geeraedts.html">Bart Geeraedts</a>
+                        <a class="url fn" href="https://lostandfoundaudio.github.io/damokles/author/chris-bajema.html">Chris Bajema</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="c-article__summary"> <p>Ik wil m'n verhaal doen ik even zeggen jongens dit is een misverstand dat klopt niet. Dus de avond voor één mei een verklede mensen vaak vaker zijn overal feestjes. Gaat het hier ieder weekend zijn ieder weekend dit het openlucht feest of zo. Ze liepen naar buiten toe en ik op het moment dat zij dat ging voorstellen dacht ik zo van. En ik wil me omdraaien en op dat moment zie ik een vuist op me afkomen. Lekker een jointje roken lekker lachen. Zeg ja meneer wordt nu weggebracht. En ze zegt een gevangenis hier allemaal tralies moeten tot op de vierde verdieping prikkeldraad. Vijf weken duren vijf weken ga weg man. We staan hier op dit moment voor de gevangenispoort van gera heb ik ook gezeten. In negentien vijfennegentig citaat een dagboek. Dus ik antwoord ik zei ja ik ben nederlander ja. Kerkdienst pater de baai zingen koor en peertje voor je tekst mandy er vol borsig meezingen. Ja meneer de pater ik heb een probleem. Maar daar heb ik nu even schijt aan ik heb een kik nie zou vier weken lang bewaren dankzij. Ik voel me al een paar dagen ik heb geen rust in de dagen ticket door nog zeven nachtjes slapen. Nou gebracht echt praktisch en. Ik had echt zoiets waar ben ik in godsnaam beland. Verdomme dat is vervelend want het is een hele goede getuigen. Terechte ze bedankt voor uw mening en.</p> </div><!-- /.entry-content -->
+        </article>
+        </li>
+</ol><!-- /#posts-list -->
+</section><!-- /#content -->
+        </main>
+
+<!--   -->
+<!--                             <li><a href="https://getpelican.com/">Pelican</a></li> -->
+<!--                          -->
+<!--                             <li><a href="https://www.python.org/">Python.org</a></li> -->
+<!--                          -->
+<!--                             <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li> -->
+<!--                          -->
+<!--                             <li><a href="#">You can modify those links in your config file</a></li> -->
+<!--                          -->
+
+        <footer class="c-page-footer">
+                <address id="about" class="vcard body">
+                 Een initiatief van <a href="mailto://lostandfoundaudio@protonmail.com">Lost and found</a>
+                </address><!-- /#about -->
+        </footer><!-- /#contentinfo -->
+
+<script>
+moment.locale('nl');
+
+function formatItemDurations() {
+	var content = document.getElementsByClassName('js--duration');
+
+	// Loop through all dates
+	for (var i = 0; i < content.length; i++) {
+    	var item = content[i];
+
+    	// Parse ISO-8601
+    	var durationObj = moment.duration(item.innerHTML);
+// console.log(durationObj)
+        item.innerHTML= moment.utc(durationObj*1000).format('HH:mm:ss');
+
+		// Print pretty version
+// 		item.innerHTML = durationObj.humanize();
+	}
+}
+formatItemDurations()
+</script>
+</body>
+</html>
